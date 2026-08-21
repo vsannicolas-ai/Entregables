@@ -8,6 +8,12 @@ height:100vh;
 margin:0;
 }
 
+.card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 10px 25px rgba(76, 222, 207, 0.5);
+}
+
 .card {
 background-color: white;
 border-radius:12px;
