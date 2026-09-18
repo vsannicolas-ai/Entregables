@@ -16,24 +16,148 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;display=swap" rel="stylesheet">
 
     </head>
-    <body class="body">
+    <body class="paper-texture">
 
-<header class="header">
+<header class="site-header">
     <div class="container header-inner">
-        <a class="logo" href="#">
 
-            <!-- Imagen utilizada como logo -->
-             <img src=""/>
+         <a href="#inicio" class="logo">
+        <span class="logo-icon">🏈</span>
 
-        </a>
-    <a href="#" class="brand-name-link">
-         <span data-template-id="brand-name" class="canva-text title-font text-lg font-bold" style="color: rgb(63, 48, 42); font-weight: 700; font-style: normal; font-size: 16px;">TechIY</span> </a>
-
+        4TH & GOAL
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#inicio">INICIO</a></li>
+          <li><a href="#productos">REWARDS</a></li>
+          <li><a href="#beneficios">LO NUEVO</a></li>
+          <li><a href="#oferta">EQUIPOS</a></li>
+          <li><a href="#contacto">CONTACTO</a></li>
+        </ul>
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero hacer un pedido en Dulce Detalle.')">
+          <i data-lucide="message-circle"></i> SHOP NOW
+        </button>
+      </nav>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">☰</button>
     </div>
+
+
+
+    <nav id="mobile-menu" class="mobile-nav">
+
+     <ul>
+          <li><a href="#inicio">INICIO</a></li>
+          <li><a href="#productos">REWARDS</a></li>
+          <li><a href="#beneficios">LO NUEVO</a></li>
+          <li><a href="#oferta">EQUIPOS</a></li>
+          <li><a href="#contacto">CONTACTO</a></li>
+        </ul>
+
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero hacer un pedido en Dulce Detalle.')">
+        <i data-lucide="message-circle"></i> Pedir ahora
+      </button>
+
     
-
+    </nav>
 </header>
+<main>
+
+<!-- ================= HERO ================= -->
+    <section id="inicio" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text reveal">
+          <p class="eyebrow">LA GRANDEZA ESTÁ EN LOS DETALLES</p>
+          <h1>4TH & GOAL PRESENTA NFL SIDELINE 2026.</h1>
+          <p class="lead">En la banca de los 32 equipos de la NFL, todos usan la misma gorra.</p>
+          <div class="hero-actions">
+            <a href="#productos" class="btn primary">Ver productos</a>
+            <button type="button" class="btn outline" onclick="openWhatsApp('Hola, vi su página y me gustaría conocer sus regalos personalizados.')">Comprar por WhatsApp</button>
+          </div>
+          <p class="trust"><i data-lucide="heart"></i> Más de 200 detalles entregados</p>
+        </div>
+        <div class="hero-image reveal">
+          <img src="img/imagenhero.JPG" alt="logo gorras nfl">
+          <span class="tag tag-love">ESTA COLECCIÓN LA VES EN LA CABEZA DE CADA JUGADOR, DE CADA HEAD COACH, DE TODOS LOS QUE PISAN LA LÍNEA DE BANDA</span>
+          <span class="tag tag-custom">No te pierdas el próximo drop.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PRODUCTOS ================= -->
+    <section id="productos" class="products">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Así luce NFL Sidelines</p>
+          <h2>Las figuras más importantes de la liga</h2>
+          <p class="lead">Hazlo único.</p>
+        </div>
+        <div class="product-grid">
+          <article class="product-card reveal">
+            <img src="img/foto 01.JPG" alt="bills">
+            <div class="product-body">
+              <span class="tag">MVP</span>
+              <h3>JOSH ALLEN</h3>
+              <p class="price">$1,119 MXN</p>
+              <p class="description">El MVP vigente entra a la temporada con cuentas pendientes.</p>
+              <button type="button" class="btn card" onclick="openModal('modal-caja')">Ver producto</button>
+            </div>
+          </article>
+          <article class="product-card reveal">
+            <img src="img/foto 02.JPG" alt="seahawks">
+            <div class="product-body">
+              <span class="tag">PICK 32</span>
+              <h3>JADARIAN PRICE</h3>
+              <p class="price">$1,119 MXN</p>
+              <p class="description">El cierre de la primera ronda del Draft 2026, pick 32..</p>
+              <button type="button" class="btn card" onclick="openModal('modal-vela')">Ver producto</button>
+            </div>
+          </article>
+          <article class="product-card reveal">
+            <img src="img/foto 03.JPG" alt="rams">
+            <div class="product-body">
+              <span class="tag">VETERANO</span>
+              <h3>MATTHEW STAFFORD</h3>
+              <p class="price">$1,119 MXN</p>
+              <p class="description">El veterano del grupo lleva la 9SEVENTY azul con el logo dorado.</p>
+              <button type="button" class="btn card" onclick="openModal('modal-taza')">Ver producto</button>
+            </div>
+          </article>
+          <article class="product-card reveal">
+            <img src="img/foto 04.JPG" alt="titans">
+            <div class="product-body">
+              <span class="tag">PICK 4</span>
+              <h3>CARNELL TATE</h3>
+              <p class="price">$279 MXN</p>
+              <p class="description">Una de las sorpresas de la primera ronda.</p>
+              <button type="button" class="btn card" onclick="openModal('modal-jardin')">Ver producto</button>
+            </div>
+          </article>
+          <article class="product-card reveal">
+            <img src="img/foto 05.JPG" alt="packers">
+            <div class="product-body">
+              <span class="tag">THE HOPE</span>
+              <h3>MICAH PARSONS</h3>
+              <p class="price">$1,119 MXN</p>
+              <p class="description">Todo listo para celebrar con dulzura, color y personalidad.</p>
+              <button type="button" class="btn card" onclick="openModal('modal-kit')">Ver producto</button>
+            </div>
+          </article>
+          <article class="product-card reveal">
+            <img src="https://images.pexels.com/photos/32589610/pexels-photo-32589610.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Tarjetas elegantes decoradas con flores secas y lavanda.">
+            <div class="product-body">
+              <span class="tag">Pequeño gran detalle</span>
+              <h3>Tarjeta con Flores</h3>
+              <p class="price">$159 MXN</p>
+              <p class="description">Un mensaje especial acompañado de flores secas y mucho encanto.</p>
+              <button type="button" class="btn card" onclick="openModal('modal-tarjeta')">Ver producto</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
 
+</main>
+<script src="js/script.js"></script>
 </body>
 </html>
